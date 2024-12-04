@@ -28,6 +28,7 @@ class GamesDataRepository(
                 cont++
             }
 
+            localDataSource.saveAll(local5)
             Log.d("@dev", local5.toString())
 
             // OBETNEMOS 2
@@ -40,7 +41,6 @@ class GamesDataRepository(
             // JUNTAMOS AMBAS
             local5.addAll(local3)
 
-            localDataSource.saveAll(local5)
             local5
 
         }
